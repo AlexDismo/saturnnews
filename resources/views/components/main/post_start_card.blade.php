@@ -6,7 +6,7 @@
     </div>
     <div class="lg:max-w-[272px] w-full">
         <a href="#"
-           class="{{ getTagClass($post->tags->isEmpty() ? 'No Tags' : $post->tags[0]->name) }} bg-opacity-50 inline-flex font-medium text-sm py-1 px-3 rounded-full mb-4">
+           class="{{ getTagClass($post->tags->isEmpty() ? 'NoTags' : $post->tags[0]->name) }} bg-opacity-50 inline-flex font-medium text-sm py-1 px-3 rounded-full mb-4">
             {{$post->tags->isEmpty() ? 'No Tags' : $post->tags[0]->name}}
         </a>
         <h2 class="font-bold text-custom-lg mb-3">

@@ -13,7 +13,7 @@ $pagesLinks = [
 
     <!--suppress XmlUnboundNsPrefix -->
 <header class="bg-white text-black shadow-md">
-    <div class="container mx-auto flex items-center justify-between p-4">
+    <div class="main-container mx-auto flex items-center justify-between p-4">
         <div class="flex items-center space-x-4">
             <a href="{{ route('home') }}" class="flex items-center text-lg font-semibold text-gray-700">
                 <img src="{{ asset('storage/layout/saturn-logo.png') }}" alt="Logo" class="h-10 mr-2">
@@ -61,13 +61,21 @@ $pagesLinks = [
             </div>
         </div>
 
-        <div class="flex items-center space-x-4">
-            <a href="{{ route('login') }}" class="text-gray-800 hover:bg-indigo-500 hover:text-white py-2 px-4 rounded">
-                Login
-            </a>
-            <a href="{{ route('register') }}" class="text-gray-800 hover:bg-indigo-500 hover:text-white py-2 px-4 rounded">
-                Register
-            </a>
+
+        <div class="flex items-center space-x-4" >
+        @guest
+                <a href="{{ route('login') }}" class="text-gray-800 hover:bg-indigo-500 hover:text-white py-2 px-4 rounded">
+                    Login
+                </a>
+                <a href="{{ route('register') }}" class="text-gray-800 hover:bg-indigo-500 hover:text-white py-2 px-4 rounded">
+                    Register
+                </a>
+        @endguest
+        @auth
+                <a href="{{route('home')}}"><img src="{{auth()->user()->avatar ? "/storage/users/avatars/{{ auth()->user()" : "/storage/users/avatars/Alec Whitten.webp" }}" alt="avatar" class="w-10 h-10 rounded-full"></a>
+                <a href="{{ route('logout') }}" class="text-gray-800 hover:bg-indigo-500 hover:text-white py-2 px-4 rounded">Logout</a>
+        @endauth
         </div>
+
     </div>
 </header>

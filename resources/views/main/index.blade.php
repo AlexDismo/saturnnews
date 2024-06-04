@@ -1,10 +1,10 @@
 @extends('layouts.base', ['title' => 'Main page'])
 
 @section('content')
-    <div class="mx-auto max-w-[1170px] px-4 sm:px-8 xl:px-0 relative z-1 font-light mt-6">
+    <div class="mx-auto px-4 sm:px-8 xl:px-0 relative z-1 font-light mt-6">
 
 
-        <section class="flex flex-wrap gap-x-7.5 gap-y-9">
+        <section class="flex flex-wrap gap-x-7.5 gap-y-9 main-container pb-4">
 
             {{--start blocks--}}
             <div class="max-w-[1170px] w-full flex flex-col lg:flex-row lg:items-center gap-7.5 lg:gap-11 bg-white shadow-1 rounded-xl p-4 lg:p-2.5">
@@ -38,7 +38,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="flex justify-between w-full">
                 @include('components.main.post_start_card', ['post' => $randomPosts[2]])
 
@@ -46,38 +45,56 @@
             </div>
         </section>
 
-
-        <section class="pt-20 lg:pt-25 pb-15">
-
-            <div class="">
-
+        {{--cards block--}}
+        <section class="pt-20 lg:pt-24 pb-12 bg-white">
+            <div class="main-container">
                 <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
-                    <div class="mb-12.5 text-center">
-                        <h2 class="text-dark mb-3.5 text-2xl font-bold sm:text-4xl xl:text-heading-3">
+                    <div class="my-12 text-center">
+                        <h2 class="text-dark mb-3 text-2xl font-bold sm:text-4xl xl:text-heading-3">
                             Browse by Category
                         </h2>
                         <p>Select a category to see more related content</p>
                     </div>
                 </div>
-
                 @include('includes.main.tag_filter', ['tags' => $tags])
-
                 <div>
                     @include('includes.main.card_block', ['posts' => $posts])
                 </div>
-
                 <button id="load-more" class="flex justify-center font-medium text-dark border border-gray-700 rounded-md py-3 px-7 hover:bg-gray-700 hover:text-white ease-in duration-200 mx-auto mt-12.5 lg:mt-12">
                     Browse all Posts
                 </button>
             </div>
-
-
-
-
-
         </section>
 
-
+        <section class="py-12 main-container relative overflow-hidden z-10">
+            <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
+                <div class="bg-white shadow-1 rounded-[10px] py-9 px-4 sm:px-8 xl:px-10">
+                    <div class="flex flex-wrap items-center justify-between gap-10">
+                        <div class="max-w-[455px] w-full">
+                            <h3 class="font-semibold text-heading-6 text-dark mb-3">
+                                Subscribe to Newsletter
+                            </h3>
+                            <p>
+                                Provide your email to get email notification when we launch new
+                                products or publish new articles
+                            </p>
+                        </div>
+                        <div class="max-w-[494px] w-full">
+                            <form>
+                                <div class="flex items-center gap-5">
+                                    <div class="max-w-[350px] w-full">
+                                        <input id="email" type="email" name="email" placeholder="Enter your Email" class="rounded-md border border-gray-300 bg-white placeholder:text-dark-5 w-full py-3.5 px-5 outline-none focus:shadow-input focus:ring-2 focus:ring-dark-4/20 focus:border-transparent">
+                                    </div>
+                                    <button class="font-medium rounded-md text-white bg-gray-700 flex py-3 px-5 hover:opacity-90 transition-all ease-linear duration-300">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
 </div>

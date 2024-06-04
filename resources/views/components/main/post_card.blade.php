@@ -1,6 +1,6 @@
 <div class="flex flex-wrap items-start">
     <div class="mb-6 overflow-hidden rounded-[10px] transition-all group-hover:scale-105">
-        <a href="">
+        <a href="{{ route('posts.show', ['id' => $post->id]) }}">
             <img src="{{$post->thumbnail}}" alt="image" class="w-full">
         </a>
     </div>
@@ -24,6 +24,6 @@
             </a>
             <p class="text-sm">{{$post->created_at->format('M d, Y')}}</p>
         </div>
-        <a href="" class="h-8 inline-flex text-blue bg-blue/[0.08] font-medium text-sm py-1 px-3 rounded-full {{getTagClass($post->tags[0]->name)}}">{{$post->tags->isEmpty() ? 'No Tags' : $post->tags[0]->name}}</a>
+        <a href="" class="h-8 inline-flex text-blue bg-blue/[0.08] font-medium text-sm py-1 px-3 rounded-full {{ getTagClass($post->tags->isEmpty() ? 'NoTags' : $post->tags[0]->name) }}">{{$post->tags->isEmpty() ? 'No Tags' : $post->tags[0]->name}}</a>
     </div>
 </div>

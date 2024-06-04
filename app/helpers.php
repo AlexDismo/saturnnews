@@ -4,7 +4,7 @@ if (! function_exists('getTagClass')) {
     function getTagClass($tagName): string
     {
         $tag_config = [
-            'All Tags' => 'bg-gray-200 text-gray-800 hover:bg-gray-400',
+            'AllTags' => 'bg-gray-200 text-gray-800 hover:bg-gray-400',
             'Fashion' => 'bg-green-200 text-green-800 hover:bg-green-400',
             'Technology' => 'bg-blue-200 text-blue-800 hover:bg-blue-400',
             'Travel' => 'bg-red-200 text-red-800 hover:bg-red-400',
@@ -20,9 +20,9 @@ if (! function_exists('getTagClass')) {
             'Movie' => 'bg-purple-300 text-purple-800 hover:bg-purple-500',
             'Music' => 'bg-indigo-300 text-indigo-800 hover:bg-indigo-500',
             'Health' => 'bg-pink-300 text-pink-800 hover:bg-pink-500',
-            'No Tags' => 'bg-gray-500 text-gray-800 hover:bg-gray-700',
+            'NoTags' => 'bg-gray-500 text-gray-800 hover:bg-gray-700',
         ];
 
-        return $tag_config[$tagName] ?? $tag_config['No Tags'];
+        return $tag_config[$tagName] ?? $tag_config['NoTags'];
     }
 }
