@@ -23,4 +23,4 @@ To set up the project, follow these steps:
 Additional Information
 
 If there are no images in the directory storage/app/public/users/avatars, Picsum will be used as the default value for stubs.
-The Mailersend service is used to send emails.
+The [Mailersend](https://app.mailersend.com/dashboard) service is used to send emails.
