@@ -3,20 +3,20 @@
 To set up the project, follow these steps:
 
 1. **Install Dependencies:**
-   ```bash
    
+   ```bash
    npm install
    composer install
    
-2. Run Development Server:
-   ```bash
+3. Run Development Server:
    
+   ```bash
    npm run dev
    php artisan serve
    
-3. Run Migrations and Seed Database:
-   ```bash
+5. Run Migrations and Seed Database:
    
+   ```bash
    php artisan migrate
    php artisan db:seed
 
