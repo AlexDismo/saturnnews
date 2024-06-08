@@ -1,8 +1,10 @@
 <div class="lg:max-w-[570px] w-full flex flex-col sm:flex-row sm:items-center gap-6 bg-white shadow-1 rounded-xl p-2.5">
     <div class="lg:max-w-[238px] w-full">
-        <a href="">
-            <img class="w-full" src="{{$post->thumbnail}}" alt="hero">
-        </a>
+        <div href="{{ route('posts.show', ['id' => $post->id]) }}">
+            <a href="{{ route('posts.show', ['id' => $post->id]) }}">
+                <img class="w-full" src="{{$post->thumbnail}}" alt="hero">
+            </a>
+        </div>
     </div>
     <div class="lg:max-w-[272px] w-full">
         <a href="#"
@@ -10,7 +12,7 @@
             {{$post->tags->isEmpty() ? 'No Tags' : $post->tags[0]->name}}
         </a>
         <h2 class="font-bold text-custom-lg mb-3">
-            <a href="">
+            <a href="{{ route('posts.show', ['id' => $post->id]) }}">
                 {{$post->title}}
             </a>
         </h2>

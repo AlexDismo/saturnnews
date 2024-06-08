@@ -4,12 +4,12 @@
     <div class="mx-auto px-4 sm:px-8 xl:px-0 relative z-1 font-light mt-6">
 
 
-        <section class="flex flex-wrap gap-x-7.5 gap-y-9 main-container pb-4">
+        <section class="flex flex-wrap gap-x-7.5 gap-y-9 main-container pb-7">
 
             {{--start blocks--}}
             <div class="max-w-[1170px] w-full flex flex-col lg:flex-row lg:items-center gap-7.5 lg:gap-11 bg-white shadow-1 rounded-xl p-4 lg:p-2.5">
                 <div class="lg:max-w-[536px] w-full">
-                    <a href="">
+                    <a href="{{ route('posts.show', ['id' => $randomPosts[0]->id]) }}">
                         <img class="w-full" src="{{$randomPosts[0]->thumbnail}}" alt="hero">
                     </a>
                 </div>
@@ -19,7 +19,7 @@
                         {{$randomPosts[0]->tags->isEmpty() ? 'No Tags' : $randomPosts[0]->tags[0]->name}}
                     </a>
                     <h1 class="font-bold text-custom-4 xl:text-heading-4 text-dark mb-4">
-                        <a href="">
+                        <a href="{{ route('posts.show', ['id' => $randomPosts[0]->id]) }}">
                             {{$randomPosts[0]->title}}
                         </a>
                     </h1>
@@ -29,7 +29,7 @@
                     <div class="flex items-center gap-2.5 mt-5">
                         <a href="" class="flex items-center gap-3">
                             <div class="flex w-6 h-6 rounded-full overflow-hidden">
-                                <img src="/storage/users/avatars/{{$randomPosts[0]->author->avatar}}" alt="user">
+                                <img src="{{getAvatarSource($randomPosts[0]->author->avatar)}}" alt="user">
                             </div>
                             <p class="text-sm">by {{$randomPosts[0]->author->name}}</p>
                         </a>

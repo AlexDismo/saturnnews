@@ -20,30 +20,6 @@ class PostController extends Controller
         return view('posts.show', ['post' => $post]);
     }
 
-    public function create()
-    {
-        return view('posts.create');
-    }
-
-    public function store(Request $request)
-    {
-        return redirect()->route('posts.index');
-    }
-
-    public function edit($id)
-    {
-        return view('posts.edit');
-    }
-
-    public function update(Request $request, $id)
-    {
-        return redirect()->route('posts.index');
-    }
-
-    public function destroy($id)
-    {
-        return redirect()->route('posts.index');
-    }
     public function getPostsByTag(Request $request)
     {
         $tag = $request->tag;

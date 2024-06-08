@@ -37,7 +37,7 @@
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
                     Password confirmation
                 </label>
-                <input name="password_confirmation" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline @error("password_confirmation") border-red-500 @enderror" id="password" type="password" placeholder="******************" required>
+                <input name="password_confirmation" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline @error("password_confirmation") border-red-500 @enderror" id="password_confirmation" type="password" placeholder="******************" required>
                 <p class="text-yellow-500 text-xs italic">Confirm a password.</p>
 
                 @error('password_confirmation')

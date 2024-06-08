@@ -24,15 +24,23 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
+        $avatarPath = 'public/users/avatars';
+        $defaultAvatar = 'https://picsum.photos/640/640';
+
+        if (!Storage::exists($avatarPath) || empty(Storage::files($avatarPath))) {
+            $avatar = $defaultAvatar;
+        } else {
+            $avatars = Storage::files($avatarPath);
+            $avatar = basename($avatars[array_rand($avatars)]);
+        }
+
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
+            'name' => $this->faker->name(),
+            'email' => $this->faker->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),
-            'avatar' => basename(
-                array_rand(array_flip(Storage::files('public/users/avatars')))
-            ),
+            'avatar' => $avatar,
         ];
     }
 

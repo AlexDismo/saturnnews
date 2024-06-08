@@ -19,5 +19,20 @@ class MainController extends Controller
 
         return view('main.index', ['randomPosts' => $randomPosts, 'posts' => $posts, 'tags' => $tags]);
     }
+
+    public function loginView()
+    {
+        return view('auth.login');
+    }
+
+    public function registerView()
+    {
+        return view('auth.register');
+    }
+
+    public function resetEmailView()
+    {
+        return view('auth.password.email');
+    }
 }
 

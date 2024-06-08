@@ -25,7 +25,7 @@
                 </h1>
                 <div class="flex items-center justify-center gap-4 mt-7.5">
                     <div class="flex w-12 h-12 rounded-full overflow-hidden">
-                        <img src="/storage/users/avatars/{{$post->author->avatar}}" alt="user">
+                        <img src="{{getAvatarSource($post->author->avatar)}}" alt="user">
                     </div>
                     <div class="text-left">
                         <h4 class="font-medium text-custom-lg text-dark mb-1">

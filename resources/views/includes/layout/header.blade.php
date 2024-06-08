@@ -64,15 +64,15 @@ $pagesLinks = [
 
         <div class="flex items-center space-x-4" >
         @guest
-                <a href="{{ route('login') }}" class="text-gray-800 hover:bg-indigo-500 hover:text-white py-2 px-4 rounded">
+                <a href="{{ route('loginView') }}" class="text-gray-800 hover:bg-indigo-500 hover:text-white py-2 px-4 rounded">
                     Login
                 </a>
-                <a href="{{ route('register') }}" class="text-gray-800 hover:bg-indigo-500 hover:text-white py-2 px-4 rounded">
+                <a href="{{ route('registerView') }}" class="text-gray-800 hover:bg-indigo-500 hover:text-white py-2 px-4 rounded">
                     Register
                 </a>
         @endguest
         @auth
-                <a href="{{route('home')}}"><img src="{{auth()->user()->avatar ? "/storage/users/avatars/{{ auth()->user()" : "/storage/users/avatars/Alec Whitten.webp" }}" alt="avatar" class="w-10 h-10 rounded-full"></a>
+                <a href="{{route('home')}}"><img src="{{auth()->user()->avatar ? "/storage/users/avatars/{{ auth()->user()" : "https://picsum.photos/640/640" }}" alt="avatar" class="w-10 h-10 rounded-full"></a>
                 <a href="{{ route('logout') }}" class="text-gray-800 hover:bg-indigo-500 hover:text-white py-2 px-4 rounded">Logout</a>
         @endauth
         </div>

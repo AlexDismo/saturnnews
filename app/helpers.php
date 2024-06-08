@@ -26,3 +26,12 @@ if (! function_exists('getTagClass')) {
         return $tag_config[$tagName] ?? $tag_config['NoTags'];
     }
 }
+if (! function_exists('getAvatarSource')) {
+    function getAvatarSource($avatar): string
+    {
+        if (filter_var($avatar, FILTER_VALIDATE_URL)) {
+            return $avatar;
+        }
+        return "/storage/users/avatars/{$avatar}";
+    }
+}

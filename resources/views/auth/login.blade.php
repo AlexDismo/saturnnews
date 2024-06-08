@@ -26,7 +26,7 @@
                 <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                     Sign In
                 </button>
-                <a href="{{route('login')}}" class="inline-block align-baseline font-bold text-sm text-yellow-500 hover:text-yellow-800">
+                <a href="{{route('resetEmailView')}}" class="inline-block align-baseline font-bold text-sm text-yellow-500 hover:text-yellow-800">
                     Forgot Password?
                 </a>
             </div>
