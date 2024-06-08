@@ -1,4 +1,4 @@
-<div class="flex flex-wrap items-start flex-col md:flex-row md:m-0 mx-auto">
+<div class="flex sm:flex-wrap items-start flex-col md:flex-row md:m-0 mx-auto">
     <div class="mb-6 overflow-hidden rounded-[10px] transition-all group-hover:scale-105">
         <a href="{{ route('posts.show', ['id' => $post->id]) }}">
             <img src="{{$post->thumbnail}}" alt="image" class="w-full h-auto object-cover">

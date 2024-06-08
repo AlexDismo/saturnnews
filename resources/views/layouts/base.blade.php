@@ -8,7 +8,7 @@
     @vite('resources/js/app.js')
     <title>@yield('title')</title>
 </head>
-<body class="flex flex-col min-h-screen justify-between">
+<body class="flex flex-col min-h-screen justify-between overflow-x-hidden">
 
 @include('includes.layout.alert')
 @include('includes.layout.header')
