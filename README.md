@@ -1,4 +1,3 @@
-![image](https://github.com/AlexDismo/saturnnews/assets/116621035/0cb3ca3f-f1fa-4d61-8ce9-eead07acc98f)# Getting Started
 
 To set up the project, follow these steps:
 
@@ -26,8 +25,9 @@ If there are no images in the directory storage/app/public/users/avatars, Picsum
 The [Mailersend](https://app.mailersend.com/dashboard) service is used to send emails.
 
 
-![image](https://github.com/AlexDismo/saturnnews/assets/116621035/b2487d1c-32c3-4c67-906b-10d56aca952a)
-![image](https://github.com/AlexDismo/saturnnews/assets/116621035/59d8682e-0630-49fe-9214-0f42de951f93)
-![image](https://github.com/AlexDismo/saturnnews/assets/116621035/4bcc8f9e-957c-49cf-831d-bdc5736f7a80)
-![image](https://github.com/AlexDismo/saturnnews/assets/116621035/87a15e07-9349-4210-a0f8-8e803d92b930)
-![image](https://github.com/AlexDismo/saturnnews/assets/116621035/883e13ef-93e4-4c3f-94ae-b1bcd7898c51)
+![image](https://github.com/AlexDismo/saturnnews/assets/116621035/3a12e836-5040-45c9-8808-82de45b230a8)
+![image](https://github.com/AlexDismo/saturnnews/assets/116621035/89191525-ea13-41cc-89ef-85f3cc8a3b37)
+![image](https://github.com/AlexDismo/saturnnews/assets/116621035/dafa8a8d-6a57-4263-9e89-3e16fde1af7c)
+![image](https://github.com/AlexDismo/saturnnews/assets/116621035/74211d64-c7b0-47f9-8ef5-77a5d5a404af)
+![image](https://github.com/AlexDismo/saturnnews/assets/116621035/37b9a903-bc2c-436e-9550-a8815b407822)
+
