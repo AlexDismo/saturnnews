@@ -2,7 +2,6 @@
 To set up the project, follow these steps:
 
 1. **Install Dependencies:**
-<<<<<<< HEAD
 
    ```bash
    npm install
