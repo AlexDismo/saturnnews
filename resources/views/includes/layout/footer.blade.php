@@ -6,7 +6,7 @@
             </p>
         </div>
 
-        <div class="flex items-center space-x-4">
+        <div class="hidden md:flex items-center space-x-4">
             <a href="#" class="text-gray-800 hover:bg-indigo-500 hover:text-white py-2 px-4 rounded">
                 Facebook
             </a>

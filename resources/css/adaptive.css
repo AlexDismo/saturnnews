@@ -1,0 +1,25 @@
+.main-container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 1200px) {
+    .main-container{
+        width: 1170px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-container{
+        width: 960px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-container{
+        width: 720px;
+    }
+}
+
+

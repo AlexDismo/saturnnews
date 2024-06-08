@@ -1,9 +1,9 @@
 @extends('layouts.base', ['title' => 'Post Page'])
 
 @section('content')
-    <section class="pb-16">
-        <div class="max-w-[1030px] mx-auto px-4 sm:px-8 xl:px-0">
-            <div class="max-w-[770px] mx-auto text-center">
+    <section class="pb-16 mx-auto">
+        <div class="w-full sm:max-w-[1030px] mx-auto px-4 sm:px-8 xl:px-0">
+            <div class="w-full sm:max-w-[770px] mx-auto text-center">
                 <div class="flex flex-wrap justify-center gap-4 items-center p-14">
                     @if($post->tags->isEmpty())
                         <a href=""
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <img src="{{$post->thumbnail}}" alt="blog" class="mt-10 mb-11 mx-auto">
-            <div class="max-w-[770px] mx-auto">
+            <div class="w-full sm:max-w-[770px] mx-auto">
                 <div>
                     <p class="mb-5 text-body">
                         {{$post->content}}

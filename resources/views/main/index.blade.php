@@ -15,7 +15,7 @@
                 </div>
                 <div class="lg:max-w-[540px] w-full">
                     <a href=""
-                       class="{{getTagClass($randomPosts[0]->tags->isEmpty() ? 'No Tags' : $randomPosts[0]->tags[0]->name) }} bg-opacity-50 inline-flex font-medium text-sm py-1 px-3 rounded-full mb-4">
+                       class="mt-3 {{getTagClass($randomPosts[0]->tags->isEmpty() ? 'No Tags' : $randomPosts[0]->tags[0]->name) }} bg-opacity-50 inline-flex font-medium text-sm py-1 px-3 rounded-full mb-4">
                         {{$randomPosts[0]->tags->isEmpty() ? 'No Tags' : $randomPosts[0]->tags[0]->name}}
                     </a>
                     <h1 class="font-bold text-custom-4 xl:text-heading-4 text-dark mb-4">
@@ -97,5 +97,5 @@
         </section>
 
     </div>
-</div>
+    </div>
 @endsection

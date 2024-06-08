@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(adaptive.css);
 
 @tailwind base;
 @tailwind components;
@@ -8,11 +9,6 @@ body{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-}
-
-.main-container{
-    width: 1170px;
-    margin: 0 auto;
 }
 
 .nav-header ul li{
@@ -38,9 +34,6 @@ body{
 }
 .bg-main{
     background-color: #eefaf9;
-}
-.tab-default{
-
 }
 .selectedTag{
     scale: 1.1;
