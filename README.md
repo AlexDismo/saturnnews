@@ -4,16 +4,19 @@ To set up the project, follow these steps:
 
 1. **Install Dependencies:**
    ```bash
+   
    npm install
    composer install
    
 2. Run Development Server:
    ```bash
+   
    npm run dev
    php artisan serve
    
 3. Run Migrations and Seed Database:
    ```bash
+   
    php artisan migrate
    php artisan db:seed
 
